@@ -10,7 +10,6 @@ packages=(
     "libmicrohttpd-dev"
     "libjansson-dev"
     "libcurl4-openssl-dev"
-    "libpq-dev"
     "libsodium-dev"
     "psmisc"
 )
