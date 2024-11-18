@@ -12,8 +12,8 @@ After=network.target
 [Service]
 ExecStart=/usr/local/bin/bitcoind
 Restart=always
-User=defaultuser
-Group=defaultuser
+User=$user_input
+Group=$user_input
 
 [Install]
 WantedBy=multi-user.target
@@ -21,7 +21,7 @@ EOF
 
 # Check if the operation was successful
 if [ $? -eq 0 ]; then
-    echo "File 'datum.service' has been created and user inserted correctly."
+    echo "File 'bitcoin_knots.service' has been created and user inserted correctly."
 else
     echo "An error occurred while creating or editing the file."
 fi
