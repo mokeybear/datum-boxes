@@ -36,7 +36,7 @@ json_content=$(cat <<EOF
     "max_clients_per_thread": $(get_input "Enter max_clients_per_thread" 2000),
     "max_threads": $(get_input "Enter max_threads" 10),
     "max_clients": $(get_input "Enter max_clients" 20000),
-    "vardiff_min": $(get_input "Enter vardiff_min" 8)
+    "vardiff_min": $(get_input "Enter vardiff_min" 16384)
   },
   "mining": {
     "pool_address": "$(get_input "Enter pool_address" "")",
@@ -55,7 +55,7 @@ json_content=$(cat <<EOF
     "pool_host": "$(get_input "Enter pool host" "datum-beta1.mine.ocean.xyz")",
     "pool_port": $(get_input "Enter pool port" 28915),
     "pool_pass_workers": $(get_input "Pass workers to pool? (true/false)" true),
-    "pool_pass_full_workers": $(get_input "Pass full workers to pool? (true/false)" true),
+    "pool_pass_full_users": $(get_input "Pass stratum miner usernames as raw usernames to the pool? (true/false)" true),
     "pooled_mining_only": $(get_input "Pooled mining only? (true/false)" true)
   }
 }
