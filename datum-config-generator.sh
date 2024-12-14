@@ -42,7 +42,7 @@ json_content=$(cat <<EOF
     "pool_host": "$(get_input "Enter pool host" "datum-beta1.mine.ocean.xyz")",
     "pool_port": $(get_input "Enter pool port" 28915),
     "pool_pass_workers": $(get_input "Pass workers to pool? (true/false)" true),
-    "pool_pass_full_workers": $(get_input "Pass full workers to pool? (true/false)" true),
+    "pool_pass_full_users": $(get_input "Pass full workers to pool? (true/false)" true),
     "pooled_mining_only": $(get_input "Pooled mining only? (true/false)" true)
   }
 }
