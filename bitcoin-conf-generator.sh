@@ -8,7 +8,7 @@ read -p "Enter value for 'dbcache': " user_input4
 read -p "Enter value for 'rpcauth': " user_input5
 
 # Create or overwrite file.txt with sudo
-sudo bash -c "cat > $user_input1/bitcoin.conf" << EOF
+sudo bash -c "cat > $user_input1bitcoin.conf" << EOF
 datadir=$user_input2
 upnp=0
 listen=1
