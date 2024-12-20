@@ -20,7 +20,7 @@ get_input() {
 echo "Where do you want to store datum_gateway_config.json?"
 read -p "Enter path (default: /home/bitcoin/datum/): " config_path
 config_path=${config_path:-/home/bitcoin/datum/}
-filename="$config_path/datum_gateway_config.json"
+filename="$config_pathdatum_gateway_config.json"
 
 # Create JSON content with user inputs or defaults
 json_content=$(cat <<EOF
